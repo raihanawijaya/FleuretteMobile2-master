@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGreen"
+    tools:context=".AddDataActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/_4sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_4sdp">
+
+            <TextView
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Date"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_trx_date"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGreen"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="14 JUN 2018" />
+
+
+            <TextView
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="OPNAME"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorLinen"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ctgr"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_ctgr_code"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite"
+                android:inputType="text"
+                android:gravity="center "
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="10dp"
+                android:text="CASUAL" />
+
+            <Button
+                android:id="@+id/btn_baby"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_gravity="center"
+                android:text="BABY" />
+
+            <Button
+                android:id="@+id/btn_casual"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_gravity="center"
+                android:text="CASUAL" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorLinen"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp">
+
+            <Button
+                android:id="@+id/btn_dn"
+                android:layout_width="46dp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_gravity="center"
+                android:text="DN" />
+
+            <Button
+                android:id="@+id/btn_de"
+                android:layout_width="44dp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_gravity="center"
+                android:autoSizeMaxTextSize="@dimen/_8sdp"
+                android:text="DE" />
+
+            <Button
+                android:id="@+id/btn_jas"
+                android:layout_width="57dp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_gravity="center"
+                android:autoSizeMaxTextSize="@dimen/_8sdp"
+                android:text="JAS" />
+
+            <Button
+                android:id="@+id/btn_jdm"
+                android:layout_width="57dp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_gravity="center"
+                android:text="JDM" />
+
+            <Button
+                android:id="@+id/btn_sfr"
+                android:layout_width="53dp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_gravity="center"
+                android:text="SFR" />
+
+            <Button
+                android:id="@+id/btn_acc"
+                android:layout_width="61dp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_gravity="center"
+                android:text="ACC" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLinen"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_10sdp">
+
+        </LinearLayout>
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAzure"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:text="Qty"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+           <EditText
+               android:id="@+id/et_qty"
+               android:layout_width="79dp"
+               android:layout_height="wrap_content"
+               android:background="@color/colorWhite"
+               android:gravity="center"
+               android:inputType="number"
+               android:paddingLeft="@dimen/_5sdp"
+               android:paddingRight="@dimen/_10sdp"
+               android:text="1" />
+
+           <Button
+               android:id="@+id/btn_simpan"
+               android:layout_width="117dp"
+               android:layout_height="@dimen/_35sdp"
+               android:layout_marginLeft="50dp"
+               android:layout_marginRight="@dimen/_25sdp"
+               android:background="@color/colorAccent2"
+               android:gravity="center"
+               android:text="Simpan ?"
+               android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_opname_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent2"
+                tools:listitem="@layout/opname_list_items"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

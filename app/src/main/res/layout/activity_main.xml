@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMadun">
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlack"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:text="14 Jun 2018"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_total_qty"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/colorJeruk"
+                    android:textSize="12sp"
+                    tools:text="120" />
+
+                <TextView
+                    android:id="@+id/tv_total_nett"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorJeruk"
+                    android:textSize="12sp"
+                    tools:text="1.500.000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly Sales "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_mtd_qty"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/colorJeruk"
+                    android:textSize="12sp"
+                    tools:text="240" />
+
+                <TextView
+                    android:id="@+id/tv_mtd_nett"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorJeruk"
+                    android:textSize="12sp"
+                    tools:text="35.750.000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plan Sales"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_mtd_status"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Under"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_mtd_ach"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/colorJeruk"
+                    android:textSize="12sp"
+                    tools:text="78 %" />
+
+                <TextView
+                    android:id="@+id/tv_mtd_plan"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorJeruk"
+                    android:textSize="12sp"
+                    tools:text="75.000.000" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Year"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_mtd_ly_status"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Over"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_mtd_ly_ach"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/colorJeruk"
+                    android:textSize="12sp"
+                    tools:text="120 %" />
+
+                <TextView
+                    android:id="@+id/tv_mtd_ly"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorJeruk"
+                    android:textSize="12sp"
+                    tools:text="78.524.000" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorFragment"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            app:tabSelectedTextColor="@color/colorJeruk"
+            app:tabTextColor="@color/colorWhite"
+            app:tabGravity="center"
+            app:tabMode="scrollable" />
+
+/
+        <TextView
+            android:id="@+id/tv_fragment_hdr_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_below="@+id/tabs"
+            android:layout_marginLeft="0dp"
+            android:background="@color/colorSapta"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            tools:text=" ARTICLE / QTY       DISC / NETT" />
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_30sdp"
+                    android:background="@color/colorFragment"
+                    android:layout_below="@+id/tv_fragment_hdr_1"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_previous_date"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="45dp"
+
+                    android:src="@drawable/ic_previous"
+
+            android:background="@color/colorGray"/>
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_next_date"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="46dp"
+                    android:background="@color/colorGray"
+                    android:src="@drawable/ic_next" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_add"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorGray"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_save" />
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
